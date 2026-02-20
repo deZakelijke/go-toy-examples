@@ -1,0 +1,16 @@
+[project]
+name = "pydashboard"
+version = "0.1.0"
+description = "A simple dashboard with streamlit"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "streamlit>=1.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.2",
+    "ty>=0.0.17",
+]
