@@ -46,7 +46,7 @@ func InsertionSort[S Sortable[N], N Number](values S) S {
 }
 
 func MergeSort[S Sortable[N], N Number](values S) S {
-	if len(values) == 1 {
+	if len(values) <= 1 {
 		return values
 	}
 
