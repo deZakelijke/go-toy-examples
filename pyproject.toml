@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 
 dependencies = [
+    "pydantic>=2.12.5",
     "streamlit>=1.54.0",
 ]
 
@@ -13,4 +14,8 @@ dependencies = [
 dev = [
     "ruff>=0.15.2",
     "ty>=0.0.17",
+    "types-requests>=2.32.4.20260107",
 ]
+
+[tool.ty.rules]
+division-by-zero = "error"
