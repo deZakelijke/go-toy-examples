@@ -9,7 +9,7 @@ repos:
     rev: v1.0.0-rc.4
     hooks:
       - id: go-fmt
-      - id: go-lint
+      - id: golangci-lint
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.15.2
     hooks:
