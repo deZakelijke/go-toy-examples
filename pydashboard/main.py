@@ -75,7 +75,14 @@ def display_todo_items(items: list[TodoItem]):
         with description_col:
             st.text(item.description)
         with done_col:
-            st.button(f"Done: {item.done}", key=i, on_click=toggle_item, args=(item,))
+            st.checkbox(
+                "",
+                value=item.done,
+                key=i,
+                on_change=toggle_item,
+                args=(item,),
+                label_visibility="hidden",
+            )
 
 
 def run_app():
